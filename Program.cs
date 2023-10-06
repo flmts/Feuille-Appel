@@ -1,12 +1,10 @@
-﻿// TODO utiliser Console.Clear pour rendre plus ergo le prompt
-// TODO Ajouter dans git 
-// TODO un system d'authentification (mdp à l'ouverture du logiciel)
-// TODO Recherche dichotomique pour modifier/supprimer une seule personne
-// TODO identifier si l'étudiant est FE ou FA    pour notifier à l'utilisateur la necessité de signer
+﻿// TODO identifier si l'étudiant est FE ou FA    pour notifier à l'utilisateur la necessité de signer
 // TODO inserer un nouveau tableau (dans le json) pour chaque appel réalisé et incrementer de 1 à son nom (comme si ct le jour suivant) pour avoir un historique des appels
 // TODO avoir des stat pour chaque eleves (toutes les absences, détail et périodes)
 // TODO rendre l'application configurable via un fichier json
+// TODO Recherche dichotomique pour modifier/supprimer une seule personne
 // TODO Ajouter des tests unitaire
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +15,9 @@ public class Program
     // Création des listes d'eleves totaux et absents
     List<Person> persons = new List<Person>();
     List<Person> personsAbsentes = new List<Person>();
+
+    //MDP de l'application 
+    private const string passwordApp = "123";
     string? moreStudents = "";
     private bool quit = false;
     public void Run()
@@ -28,18 +29,20 @@ public class Program
             Console.WriteLine("\r\nMenu :\r\n");
             Console.WriteLine("1 - Faire l'appel");
             Console.WriteLine("2 - Lister tous les étudiants");
-            Console.WriteLine("3 - Ajouter un étudiant");
-            Console.WriteLine("4 - Supprimer la liste d'étudiants");
-            Console.WriteLine("5 - Quitter l'application");
+            Console.WriteLine("3 - Ajouter une liste d'étudiants");
+            Console.WriteLine("4 - Supprimer la liste actuelle d'étudiants");
+            Console.WriteLine("5 - Lister l'historique des appels");
+            Console.WriteLine("6 - Quitter l'application");
 
             string? choice = Console.ReadLine();
-
+            Console.Clear();
             switch (choice)
             {
                 case "1":
                     Console.WriteLine("Liste de tous les étudiants dans la classe : ");
                     try{
                         faireAppel();
+                        clearPrompt();
                     }
                     catch (Exception ex)
                     {
@@ -50,17 +53,19 @@ public class Program
                 case "2":
                     Console.WriteLine("Liste de tous les étudiants dans la classe : ");
                     listStudent();
+                    clearPrompt();
                     break;
 
                 case "3":
-                    addStudent();
+                    addListStudents();
                     break;
 
                 case "4":
                     deleteStudents();
+                    clearPrompt();
                     break;
 
-                case "5":
+                case "6":
                     quit = true;
                     break;
 
@@ -114,7 +119,9 @@ public class Program
         }
     }
 
-    public void addStudent(){
+    public void addListStudents(){
+
+        // Regarder dans le fichier json si y'a deja une liste, si y'a une liste alors on en créer une autre à la suite
         do{
             // Rentrée des utilisateurs dans la feuille d'appel
             Console.Write("Entrer le nom: ");
@@ -136,7 +143,7 @@ public class Program
 
             Console.Write("Rentrer plus d'étudiants ? (ne rien rentrer si on ne veut pas inscrire plus d'étudiants)");
             moreStudents = Console.ReadLine();
-
+            Console.Clear();
         } while (!String.IsNullOrEmpty(moreStudents));
 
         //insertion dans json des etudiants
@@ -149,6 +156,13 @@ public class Program
     public void deleteStudents(){
         persons.Clear();
         personsAbsentes.Clear();
+        Console.WriteLine("Tout les etudiants ont été supprimés de la liste ! ");
+    }
+
+    public void clearPrompt(){
+        Console.WriteLine("\r\nAppuyer sur entrer pour revenir en arriere");
+        Console.ReadLine();
+        Console.Clear();
     }
 
     public class Person{
@@ -158,6 +172,17 @@ public class Program
     }
 
     public static void Main(string[] args){
+        bool correctPaswword = false;
+        while (!correctPaswword){
+            Console.Write("Veuillez entrer le mot de passe :");
+            string passwordAsk = Console.ReadLine();
+            if (passwordApp == passwordAsk){
+                correctPaswword = true;
+            }
+            else{
+                Console.WriteLine("Mot de passe incorrect. Veuillez réessayer.");
+            }
+        }
         Program program = new Program();
         program.Run();
     }

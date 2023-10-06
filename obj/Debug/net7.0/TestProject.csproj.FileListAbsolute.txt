@@ -12,3 +12,17 @@ C:\Users\flori\OneDrive\Bureau\master\CsharpProjects\TestProject\obj\Debug\net7.
 C:\Users\flori\OneDrive\Bureau\master\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.pdb
 C:\Users\flori\OneDrive\Bureau\master\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.genruntimeconfig.cache
 C:\Users\flori\OneDrive\Bureau\master\CsharpProjects\TestProject\obj\Debug\net7.0\ref\TestProject.dll
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.exe
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.deps.json
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.runtimeconfig.json
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.dll
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.pdb
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfo.cs
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.dll
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\refint\TestProject.dll
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.pdb
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.genruntimeconfig.cache
+C:\Users\flori\OneDrive\Bureau\master\Dotnet\Projet\CsharpProjects\TestProject\obj\Debug\net7.0\ref\TestProject.dll

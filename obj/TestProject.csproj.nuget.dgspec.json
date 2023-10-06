@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flori\\OneDrive\\Bureau\\master\\CsharpProjects\\TestProject\\TestProject.csproj": {}
+    "C:\\Users\\flori\\OneDrive\\Bureau\\master\\Dotnet\\Projet\\CsharpProjects\\TestProject\\TestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flori\\OneDrive\\Bureau\\master\\CsharpProjects\\TestProject\\TestProject.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Bureau\\master\\Dotnet\\Projet\\CsharpProjects\\TestProject\\TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\Dotnet\\Projet\\CsharpProjects\\TestProject\\TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\Dotnet\\Projet\\CsharpProjects\\TestProject\\TestProject.csproj",
         "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\CsharpProjects\\TestProject\\obj\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Bureau\\master\\Dotnet\\Projet\\CsharpProjects\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config"
